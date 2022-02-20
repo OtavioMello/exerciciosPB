@@ -6,18 +6,23 @@ public class Usuario {
     static int acertos;
     static int erros;
 
+    //Contrutor de usuário.
     Usuario(String nome, int pontuacao, int erros){
         this.nome = nome;
         this.acertos = pontuacao;
         this.erros = erros;
-        System.out.println("\n===================================\n" + nome + ", seja bem vindo(a)!!!" +
-                "\n===================================\n\n");
+
+        System.out.println("\n===================================\n"
+                + nome + ", seja bem vindo(a)!!!"
+                + "\n===================================\n\n");
     }
 
+    //Método responsável por exibir o nome do usuário e sua pontuação no final.
     static void exibePontuação(){
-        System.out.println("=================================== \nUsuário: "
-                + nome + "\nAcertos: "
-                + acertos + "\nErros: "
-                + erros + "\n===================================");
+        System.out.println("=================================== \n" +
+                "Usuário: " + nome
+                + "\nAcertos: " + acertos
+                + "\nErros: " + erros
+                + "\n===================================");
     }
 }
